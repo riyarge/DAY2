@@ -10,7 +10,17 @@ const students=[
         Name: 'Joe',
         Department:'Physics',
         Semester:'S5'
-    }
+    },
+    {
+      Name: 'Jerry',
+      Department:'Chemistry',
+      Semester:'S1'
+  },
+  {
+    Name: 'Laura',
+    Department:'Physics',
+    Semester:'S3'
+}
 ]
 
 const Records = () => {

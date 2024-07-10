@@ -5,18 +5,18 @@ import './App.css'
 import View from './components/View'
 import Records from './components/Records'
 import Add from './components/Add'
-
+import {Routes, Route} from 'react-router-dom'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <h1>Welcome to React session</h1>
       <View/>
-      <Records/>
-      <Add/>
+      <Routes>
+        <Route path='/' element={<Records/>}></Route>
+        <Route path='/add' element={<Add person={{fname:"Swathi",department:"English Literature",semester:"S4"}}/>}></Route>
+      </Routes>
     </>
   )
 }
-
 export default App
