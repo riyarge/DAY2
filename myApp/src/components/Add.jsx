@@ -1,4 +1,4 @@
-import { Box, Button, Stack, TextField } from '@mui/material'
+import {Box, TextField, Stack, Button} from '@mui/material'
 import React, { useState ,useEffect} from 'react'
 
 
@@ -10,7 +10,7 @@ const Add = ({person}) => {
   const [form,setForm]=useState(
    { fname : person.fname,
     department : person.department,
-    semester: person.semester
+    semester: person.semester 
    }
   )
   function valueCap(e)

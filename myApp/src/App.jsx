@@ -6,6 +6,7 @@ import View from './components/View'
 import Records from './components/Records'
 import Add from './components/Add'
 import {Routes, Route} from 'react-router-dom'
+import Demoaxios from './components/Demoaxios'
 function App() {
 
   return (
@@ -13,7 +14,7 @@ function App() {
       <h1>Welcome to React session</h1>
       <View/>
       <Routes>
-        <Route path='/' element={<Records/>}></Route>
+        <Route path='/' element={<Demoaxios/>}></Route>
         <Route path='/add' element={<Add person={{fname:"Swathi",department:"English Literature",semester:"S4"}}/>}></Route>
       </Routes>
     </>
